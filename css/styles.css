@@ -55,16 +55,22 @@ main {
   margin-bottom: 2rem;
   background-color: var(--color-White);
 }
-
+/* 
 .imageBox {
   width: 100%;
   height: 200px;
-  background-image: url(../assets/images/image-omelette.jpeg);
+  /* background-image: url(../assets/images/image-omelette.jpeg); 
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   position: relative;
   margin-bottom: 1rem;
+} */
+
+img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 2rem;
 }
 
 section {
@@ -233,33 +239,7 @@ footer {
   h1 {
     font-size: 40px;
   }
-
-  .imageBox {
-    border-radius: 10px;
-  }
-}
-
-/* Responsive adjustments for various widths */
-@media (min-width: 1024px) {
-  .imageBox {
-    height: 400px; /* Slightly larger height for small laptops/tablets */
-  }
-}
-
-@media (min-width: 793px) {
-  .imageBox {
-    height: 300px; /* Adjust height for narrow screens */
-  }
-}
-
-@media (min-width: 500px) {
-  .imageBox {
-    height: 300px; /* Ensure visibility on very small devices */
-  }
-}
-
-@media (min-width: 450px) {
-  .imageBox {
-    height: 200px; /* Ensure visibility on very small devices */
+  img {
+    border-radius: 15px;
   }
 }
