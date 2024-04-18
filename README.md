@@ -25,8 +25,8 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 
 ### Links
 
-- Solution URL: (https://github.com/Frontend-Mentorr/blog-preview-card)
-- Live Site URL: (https://frontend-mentorr.github.io/blog-preview-card/)
+- Solution URL: (https://github.com/Frontend-Mentorr/Recipe_page_HTML-CSS)
+- Live Site URL: (https://frontend-mentorr.github.io/Recipe_page_HTML-CSS/)
 
 ## My process
 
@@ -40,31 +40,35 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 ### What I learned
 
 ```css
-.illustrationBox {
-  border-radius: 10px;
-  background-image: url(../assets/images/illustration-article.svg);
-  background-repeat: no-repeat;
-  width: 100%;
-  height: 42%;
-  background-position: center;
-  background-size: cover;
-  position: relative;
-  background-color: blue;
-  margin-bottom: 1.5rem;
+ul li::before {
+  content: '•'; /* Bullet character */
+  color: var(--color-Nutmeg); /* Color of the bullet */
+  position: absolute;
+  font-size: 20px; /* Larger bullet */
+  font-family: 'Outfit', sans-serif;
+
+  left: 0;
 }
 
-h1:hover {
-  background: black;
-  color: var(--color-yellow);
-  text-decoration: none;
-  border-radius: 5px;
-  text-align: center;
+ol {
+  counter-reset: list-counter; /* Creates a counter for ordered list */
+}
+
+ol li::before {
+  counter-increment: list-counter; /* Increments the counter */
+  content: counter(list-counter) '.'; /* Displays the counter */
+  color: var(--color-Nutmeg); /* Color of the number */
+  position: absolute;
+  font-size: 16px; /* Larger number */
+  font-weight: 700;
+  left: 0;
+  font-family: 'Outfit', sans-serif;
 }
 ```
 
 ### Continued development
 
-I would like to continue studying CSS animation, transitions and FX like parallax.
+I would like to continue studying responsive CSS and animation, transitions and FX like parallax.
 
 ### Useful resources
 
