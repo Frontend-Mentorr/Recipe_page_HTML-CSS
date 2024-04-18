@@ -73,6 +73,11 @@ section {
   padding-right: 2rem;
 }
 
+.pinkBackground {
+  background-color: var(--color-Rose_White);
+  padding: 1rem;
+}
+
 h1 {
   font-family: 'Young Serif', serif;
   font-weight: 400;
