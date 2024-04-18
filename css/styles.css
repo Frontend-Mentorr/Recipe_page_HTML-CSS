@@ -1,0 +1,259 @@
+/* Import "EB Garamond" from Google Fonts */
+@import url('https://fonts.google.com/specimen/Figtree');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap');
+
+/*-----CSS RESET: -Universal selector to reset default browser styles-----*/
+* {
+  margin: 0px;
+  padding: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  box-sizing: border-box;
+}
+/*-----declaring the root pseudo-class to use global color variables  styles to use them across the html doc-----*/
+:root {
+  --color-Nutmeg: hsl(14, 45%, 36%); /* Primary*/
+  --color-Dark_Raspberry: hsl(332, 51%, 32%); /* Primary*/
+  --color-Rose_White: hsl(330, 100%, 98%);
+  --color-White: hsl(0, 0%, 100%);
+  --color-Eggshell: hsl(47, 88%, 63%);
+  --color-Light_Gray: hsl(30, 18%, 87%);
+  --color-Wenge_Brown: hsl(30, 10%, 34%);
+  --color-Dark_Charcoal: hsl(24, 5%, 18%);
+}
+
+/* Decorative styles */ /* Query for mobiles */
+
+/* --------------MOBILE FIRST------------ */
+
+html,
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* This ensures that the total height is at least the height of the viewport */
+  margin: 0;
+  padding: 0;
+  background-color: var(--color-White);
+}
+
+main {
+  flex: 1 0 auto; /* This allows the main content to grow and shrink but not shrink smaller than its content */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: var(--color-White);
+}
+
+.articleContainer {
+  width: 100%;
+  min-height: 1200px; /* Use min-height to accommodate varying content sizes */
+  display: flex;
+  justify-content: left;
+  flex-direction: column;
+  align-items: left;
+  margin-bottom: 2rem;
+  background-color: var(--color-White);
+}
+
+.imageBox {
+  width: 100%;
+  height: 200px;
+  background-image: url(../assets/images/image-omelette.jpeg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+section {
+  margin-bottom: 1rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+h1 {
+  font-family: 'Young Serif', serif;
+  font-weight: 400;
+  font-size: 26px;
+  margin-bottom: 1rem;
+  color: var(--color-black);
+}
+
+h2 {
+  font-family: 'Young Serif', serif;
+  font-weight: 500;
+  margin-bottom: 1rem;
+  font-size: 24px;
+  color: var(--color-Nutmeg);
+  margin-top: 1rem;
+}
+h3 {
+  font-family: 'Outfit', sans-serif;
+  font-weight: 800;
+  font-size: 1rem;
+  font-size: 16px;
+  color: var(--color-Dark_Raspberry);
+}
+
+p {
+  font-family: 'Outfit', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--color-black);
+  margin-bottom: 1rem;
+}
+
+hr {
+  border-width: 1px;
+  color: var(--color-Light_Gray);
+}
+
+ul,
+ol {
+  list-style: none; /* Removes default list markers */
+  padding-left: 0; /* Removes default padding */
+}
+
+ul {
+  margin-left: 2rem;
+  font-family: 'Outfit', sans-serif;
+  font-style: normal;
+  font-size: 16px;
+  margin-bottom: 1rem;
+}
+
+ol {
+  margin-left: 2rem;
+  font-family: 'Outfit', sans-serif;
+  font-style: normal;
+  font-size: 16px;
+  margin-bottom: 1.5rem;
+}
+
+li {
+  position: relative; /* Needed to position the pseudo-element correctly */
+  padding-left: 2rem;
+}
+
+ul li::before {
+  content: '•'; /* Bullet character */
+  color: var(--color-Nutmeg); /* Color of the bullet */
+  position: absolute;
+  font-size: 20px; /* Larger bullet */
+  font-family: 'Outfit', sans-serif;
+
+  left: 0;
+}
+
+ol {
+  counter-reset: list-counter; /* Creates a counter for ordered list */
+}
+
+ol li::before {
+  counter-increment: list-counter; /* Increments the counter */
+  content: counter(list-counter) '.'; /* Displays the counter */
+  color: var(--color-Nutmeg); /* Color of the number */
+  position: absolute;
+  font-size: 16px; /* Larger number */
+  font-weight: 700;
+  left: 0;
+  font-family: 'Outfit', sans-serif;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto; /* Creates two columns */
+  grid-gap: 0; /* Remove gap to allow borders to connect */
+  padding: 10px;
+  font-family: 'Outfit', sans-serif;
+}
+
+.grid-item {
+  padding: 8px; /* Padding for each item */
+  display: flex; /* This will align the content nicely */
+  align-items: center; /* Centers items vertically within the div */
+  text-align: left;
+  border-bottom: 2px solid var(--color-Light_Gray);
+}
+
+.label {
+  font-weight: 300; /* Optional: to highlight the label */
+}
+
+.value {
+  justify-content: flex-start; /* Aligns the values to the right */
+  width: 100%; /* Ensures the values take up the full width */
+}
+
+footer {
+  font-family: 'Outfit', sans-serif;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.attribution {
+  text-align: center;
+  margin-bottom: 2rem; /* Keeps the footer at the bottom but only after all other content */
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/* --------------MEDIA QUERIES------------ */
+
+/* --------------DESKTOP------------ */
+
+@media (min-width: 450px) {
+  html,
+  body {
+    height: 100vh; /* This ensures that the body takes the full viewport height */
+    background-color: var(--color-Light_Gray);
+  }
+  main {
+    background-color: var(--color-Light_Gray);
+  }
+
+  .articleContainer {
+    width: 85%;
+    min-height: 1200px; /* 🚩Using min-height to allow content to expand. This was the solution for the bg 🐞*/
+    border-radius: 20px;
+    padding: 2rem;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+  }
+  h1 {
+    font-size: 40px;
+  }
+
+  .imageBox {
+    border-radius: 10px;
+  }
+}
+
+/* Responsive adjustments for various widths */
+@media (min-width: 1024px) {
+  .imageBox {
+    height: 400px; /* Slightly larger height for small laptops/tablets */
+  }
+}
+
+@media (min-width: 793px) {
+  .imageBox {
+    height: 300px; /* Adjust height for narrow screens */
+  }
+}
+
+@media (min-width: 500px) {
+  .imageBox {
+    height: 300px; /* Ensure visibility on very small devices */
+  }
+}
+
+@media (min-width: 450px) {
+  .imageBox {
+    height: 200px; /* Ensure visibility on very small devices */
+  }
+}
