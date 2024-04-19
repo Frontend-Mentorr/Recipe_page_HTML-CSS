@@ -17,7 +17,7 @@
   --color-Rose_White: hsl(330, 100%, 98%);
   --color-White: hsl(0, 0%, 100%);
   --color-Eggshell: hsl(47, 88%, 63%);
-  --color-Light_Gray: hsl(30, 18%, 87%);
+  --color-Light_Gray: hsl(25, 52%, 92%);
   --color-Wenge_Brown: hsl(30, 10%, 34%);
   --color-Dark_Charcoal: hsl(24, 5%, 18%);
 }
@@ -229,7 +229,7 @@ footer {
   }
 
   .articleContainer {
-    width: 85%;
+    width: 70%;
     min-height: 1200px; /* 🚩Using min-height to allow content to expand. This was the solution for the bg 🐞*/
     border-radius: 20px;
     padding: 2rem;
