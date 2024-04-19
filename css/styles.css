@@ -148,6 +148,8 @@ li {
   padding-left: 2rem;
 }
 
+/* -----using now pseudo-elements -------------*/
+
 ul li::before {
   content: '•'; /* Bullet character */
   color: var(--color-Nutmeg); /* Color of the bullet */
