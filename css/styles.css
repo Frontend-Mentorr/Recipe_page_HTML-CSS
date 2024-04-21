@@ -177,7 +177,7 @@ ol li::before {
 
 .grid-container {
   display: grid;
-  grid-template-columns: auto auto; /* Creates two columns */
+  grid-template-columns: 250px repeat(1, 1fr); /* with fr you have more flexibility than just using auto Creates two columns */
   grid-gap: 0; /* Remove gap to allow borders to connect */
   padding: 10px;
   font-family: 'Outfit', sans-serif;
