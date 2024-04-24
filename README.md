@@ -64,6 +64,33 @@ ol li::before {
   left: 0;
   font-family: 'Outfit', sans-serif;
 }
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 250px repeat(1, 1fr); /* with fr you have more flexibility than just using auto Creates two columns */
+  grid-gap: 0; /* Remove gap to allow borders to connect */
+  padding: 10px;
+  font-family: 'Outfit', sans-serif;
+  /* background-color: aqua; */
+}
+
+.grid-item {
+  padding: 8px; /* Padding for each item */
+  display: flex; /* This will align the content nicely */
+  align-items: center; /* Centers items vertically within the div */
+  text-align: left;
+  border-bottom: 2px solid var(--color-Light_Gray);
+}
+
+.label {
+  font-weight: 300; /* Optional: to highlight the label */
+}
+
+.value {
+  justify-content: flex-end; /* Aligns the values to the right */
+  width: 100%; /* Ensures the values take up the full width */
+  color: var(--color-Nutmeg);
+}
 ```
 
 ### Continued development
