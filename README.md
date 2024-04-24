@@ -1,6 +1,6 @@
 # Frontend Mentor - Recipe page solution
 
-This is a solution to the [Recipe page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/recipe-page-KiTsR8QQKm). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+This is a solution to the [Recipe page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/recipe-page-KiTsR8QQKm). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 ## Table of contents
 
@@ -26,7 +26,7 @@ This is a solution to the [Recipe page challenge on Frontend Mentor](https://www
 ### Links
 
 - Solution URL: (https://github.com/Junbol-Frontend-Mentor/Recipe_page_HTML-CSS)
-- Live Site URL: (https://frontend-mentorr.github.io/Recipe_page_HTML-CSS/)
+- Live Site URL: (https://junbol-frontend-mentor.github.io/Recipe_page_HTML-CSS/)
 
 ## My process
 
