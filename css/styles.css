@@ -55,17 +55,7 @@ main {
   margin-bottom: 2rem;
   background-color: var(--color-White);
 }
-/* 
-.imageBox {
-  width: 100%;
-  height: 200px;
-  /* background-image: url(../assets/images/image-omelette.jpeg); 
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  position: relative;
-  margin-bottom: 1rem;
-} */
+
 
 img {
   width: 100%;
@@ -181,6 +171,7 @@ ol li::before {
   grid-gap: 0; /* Remove gap to allow borders to connect */
   padding: 10px;
   font-family: 'Outfit', sans-serif;
+  /* background-color: aqua; */
 }
 
 .grid-item {
@@ -196,7 +187,7 @@ ol li::before {
 }
 
 .value {
-  justify-content: flex-start; /* Aligns the values to the right */
+  justify-content:flex-end; /* Aligns the values to the right */
   width: 100%; /* Ensures the values take up the full width */
   color: var(--color-Nutmeg);
 }
