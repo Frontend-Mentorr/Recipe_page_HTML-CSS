@@ -32,10 +32,12 @@ This is a solution to the [Recipe page challenge on Frontend Mentor](https://www
 
 ### Built with
 
-- Semantic HTML5 markup
-- CSS custom properties
-- Flexbox
-- Mobile-first workflow
+-Semantic HTML5 markup
+-CSS custom properties
+-Flexbox
+-Mobile-first workflow
+-GIT/GitHub
+-PowerShell Command line
 
 ### What I learned
 
