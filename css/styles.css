@@ -2,13 +2,13 @@
 @import url('https://fonts.google.com/specimen/Figtree');
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap');
 
-/*-----CSS RESET: -Universal selector to reset default browser styles-----*/
-* {
-  margin: 0px;
-  padding: 0px;
-  margin-top: 0px;
-  margin-bottom: 0px;
-  box-sizing: border-box;
+/* Universal reset also explicitly to all pseudo-elements */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 /*-----declaring the root pseudo-class to use global color variables  styles to use them across the html doc-----*/
 :root {
